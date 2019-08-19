@@ -1,0 +1,445 @@
+/*------------------------------------------------------------
+ Theme name : CV Template
+ Author : Minh Duc
+ Description : Bootstrap Theme v4.3.0
+--------------------------------------------------------------
+        CSS INDEX
+========================
+1.Theme Default CSS (typography , body  ,link color ,section)
+
+
+/*******************************
+     1. Theme Default
+********************************/
+
+
+@font-face {
+    font-family: 'Bold';
+    src: url('../fonts/OpenSans-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BoldItalic';
+    src: url('../fonts/OpenSans-BoldItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ExtraBold';
+    src: url('../fonts/OpenSans-ExtraBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ExtraBoldItalic';
+    src: url('../fonts/OpenSans-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Light';
+    src: url('../fonts/OpenSans-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LightItalic';
+    src: url('../fonts/OpenSans-LightItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Regular';
+    src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RegularItalic';
+    src: url('../fonts/OpenSans-RegularItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SemiBold';
+    src: url('../fonts/OpenSans-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SemiBoldItalic';
+    src: url('../fonts/OpenSans-SemiBoldItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'serif-web';
+    src: url('../fonts/penumbra-serif-web.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'serifWeb';
+    src: url('../fonts/Penumbra-SerifWeb.woff2') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+a{
+    text-decoration: none !important;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+body,html{
+    background: #e9ecef;
+}
+ul li {
+    list-style: none;
+}
+section{
+    display: none;
+}
+section .active{
+    display: block;
+}
+/*******************************
+     2. Header
+********************************/
+#header .banner-text{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    padding: .5rem 1rem;
+    display: none;
+    z-index: 1;
+    text-align: center;
+    background: #f8f9fa;
+    transition: top 0.3s;
+}#header .banner-text .float-right{
+    font-size: 17px;
+    font-family: SansSerif, BoldItalic;
+ }
+#header .banner-text .float-left img{
+    height: 50px;
+    width: auto;
+}
+#header .setting-mobiles-nav{
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+}
+#header .setting-mobiles-nav .btn-group{
+    width: 100%;
+    height: auto;
+}
+#header .setting-mobiles-nav .btn-group > .btn:not(:last-child):not(.dropdown-toggle){
+    border-radius: 0;
+}
+#header .setting-mobiles-nav .btn-group > .btn:not(:first-child), .btn-group > .btn-group:not(:first-child) > .btn{
+    border-radius: 0;
+}
+#header .setting-mobiles-nav .btn-group > .btn-light:not(:disabled):not(.disabled):active:focus, .btn-light:not(:disabled):not(.disabled).active:focus, .show > .btn-light.dropdown-toggle:focus{
+  box-shadow: none;
+}
+#header .setting-mobiles-nav .btn-group > .btn-light:not(:disabled):not(.disabled):active  , .btn-light:not(:disabled):not(.disabled).active , .show > .btn-light.dropdown-toggle{
+    border-top: 2px solid #007bff;
+    background-color: #fff;
+    border-bottom-color: #fff;
+    border-right-color: #fff;
+    border-left-color: #fff;
+
+}
+#header .setting-mobiles-nav .btn-group > .btn-light:not(:disabled):not(.disabled):active i, .btn-light:not(:disabled):not(.disabled).active i {
+    color: #007bff;
+}
+#header .setting-mobiles-nav .btn-group > a{
+    border-bottom: none;
+    padding: 0.75rem 0.75rem;
+}
+    /*=====Right bar======*/
+.right-bar {
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 24px 0 rgba(49,58,70,.1), 0 1px 0 0 rgba(49,58,70,.08);
+    box-shadow: 0 0 24px 0 rgba(49,58,70,.1), 0 1px 0 0 rgba(49,58,70,.08);
+    display: block;
+    position: fixed;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+    width: 260px;
+    height: 100%;
+    z-index: 9999;
+    float: right!important;
+    right: -270px;
+    top: 0;
+    bottom: 0;
+}
+.hoverlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+}
+.right-bar .right-bar-toggle{
+    z-index: 9999;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+.right-bar .main-menu-header {
+    padding: 16px 0 17px;
+    background-image: url(../images/product/3.jpg);
+    background-size: cover;
+    text-align: center;
+    position: relative;
+}
+.right-bar .main-menu-header img{
+    height: 100px;
+    width: auto;
+}
+.right-bar .main-menu-header:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.right-bar .main-menu-header .user-details {
+    display: block;
+    margin-top: 10px;
+    position: relative;
+    -webkit-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+.more-details {
+    display: none;
+}
+.more-details a {
+    padding: 10px 25px;
+    display: block;
+    color: #666;
+    text-decoration: none;
+    -webkit-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+.more-details a i {
+    margin-right: 10px;
+}
+.more-details a:hover{color: #333;}
+.right-bar .main-menu-header .user-details #more-details {
+    cursor: pointer;
+}
+.right-bar .main-menu-header .user-details a {
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+.right-bar .main-menu-header .user-details a i {
+    font-size: 10px;
+    margin-left: 10px;
+}
+/*-----sticky navbar-----*/
+.sticky {
+    background: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, .5);
+    -o-box-shadow: 0 1px 4px rgba(0, 0, 0, .5);
+    -ms-box-shadow: 0 1px 4px rgba(0, 0, 0, .5);
+    z-index: 999999;
+}
+.sticky  .banner-text{
+    display: block;
+}
+.sticky .info-nav{
+    display: none;
+}
+.sticky .navbar-link{
+    margin-left: auto !important;
+}
+.sticky .dropdown .dropdown-hover{
+    top: 89px;
+}
+
+/*******************************
+     3. Main
+********************************/
+#home .card {
+    border: 0;
+    cursor: pointer;
+}
+#home .card img{height: 250px;}
+#home .card:hover{
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.19) !important;
+}
+
+/*******************************
+     4. Lettering
+********************************/
+#lettering .audio audio {
+    opacity: 0;
+    display: none;
+}
+#lettering ul {padding: 0;height: 100%;width: auto;}
+#lettering ul li {
+    border: 1px solid #007bff;
+    float: left;
+    border-radius: 2px;
+    height: 60px;
+    width: 68px;
+    margin-left: 1px;
+    margin-bottom: 1px;
+}
+#lettering ul li a {
+    font-family: 'Josefin Sans', sans-serif;
+    cursor: pointer;
+    display: inline-grid;
+    color: #333;
+    font-size: 16px;
+    padding: 0.4rem 1.53rem;
+}
+#lettering ul li a span{color: #bec1c4;}
+#lettering ul li a i{
+    display: none;
+    height: 100%;
+    position: absolute;
+    font-size: 30px;
+    background-color: #1b1e217a;
+    color: #fff;
+    left: 0;
+    top: 0;
+    padding: 1rem 1.33rem;
+    border-radius: .1rem;
+    transition: all .4s ease-in-out;
+}
+#lettering ul li a:hover i{
+    /*display: block;*/
+}
+/*******************************
+     5. vocabulary
+********************************/
+#vocabulary .vocabulary-game-content{
+    height: 460px;
+    width: 100%;
+    padding: 7rem;
+}#vocabulary .vocabulary-game-content div {
+    width: 100px;
+    margin: auto;
+    font-size: 5rem;
+    font-family: "UTM Penumbra", Regular;
+ }
+/*******************************
+     6. school-groups
+********************************/
+#school-groups .chat-content {
+    height: 460px;
+    width: 100%;
+    overflow: scroll;
+    color: #333;
+    background: #fff;
+    padding: 10px;
+}
+#school-groups .chat {
+    color: #333;
+    height: 100%;
+    width: 100%;
+    border-bottom:1px solid #e9ecef;
+}
+#school-groups .chat .titles{
+    margin-right: 10px ;
+
+}
+/*******************************
+     10. fa
+********************************/
+.social-network a{
+    padding: 13px;
+    font-size: 20px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.social-network a:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+/*******************************
+     11. Setting slider
+********************************/
+/*-----------background icon --------------*/
+.prev{
+    background: url('../images/icon/icons8-prev.png') center center no-repeat;
+    background-size: cover;
+}
+.pause{
+    background: url('../images/icon/icons8-pause.png');
+    background-size: cover;
+}
+.next{
+    background: url('../images/icon/icons8-next.png') center center no-repeat;
+    background-size: cover;
+}
+
+.prev,.pause,.next{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+

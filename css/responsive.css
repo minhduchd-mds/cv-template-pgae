@@ -1,0 +1,62 @@
+/*
+   Design responsive  : Minh Duc ;
+   Standard version   : 0.0001 ;
+*/
+@media only screen and (min-width: 320px) and (max-width: 374px)
+{
+    #header .setting-mobiles-nav,#header  .banner-text {
+        display: block;
+    }
+    #home,#lettering,#school-groups,#vocabulary {padding-top: 90px;}
+}
+
+
+@media only screen and (min-width: 374px) and (max-width: 424px)
+{
+
+    #header .setting-mobiles-nav ,#header  .banner-text{
+        display: block;
+    }
+    #home ,#lettering,#school-groups,#vocabulary{padding-top: 90px;}
+
+}
+
+
+@media only screen and (min-width: 425px) and (max-width: 767px)
+{
+
+    #header .setting-mobiles-nav ,#header  .banner-text{
+        display: block;
+    }
+    #header .setting-mobiles-nav .btn-group > a{
+        padding: 0.75rem 0.75rem;
+    }
+    #home,#lettering {padding-top: 90px;}
+    #lettering ul li{
+        width: 84px;
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px)
+{
+
+    .right-bar{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1439px)
+{
+
+    .right-bar{
+        display: block;
+    }
+}
+@media only screen and (min-width: 1440px) and (max-width: 2560px){
+
+
+    .right-bar{
+        display: block;
+    }
+}
